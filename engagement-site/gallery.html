@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photos</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .ph{border:1px solid #ededed;border-radius:16px;overflow:hidden;background:#fff}
+    .ph img{width:100%;height:260px;object-fit:cover;display:block}
+    .cap{padding:10px 12px;color:#444;font-size:.95rem}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Photos</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="gallery.html" class="active">Photos</a>
+    </nav>
+  </header>
+
+  <main class="card">
+    <h1>Our moments</h1>
+
+    <div class="grid">
+      <div class="ph">
+        <img src="assets/photos/01.jpg" alt="Photo 1">
+        <div class="cap">Caption for photo 1</div>
+      </div>
+      <div class="ph">
+        <img src="assets/photos/02.jpg" alt="Photo 2">
+        <div class="cap">Caption for photo 2</div>
+      </div>
+    </div>
+
+    <p class="tiny">
+      To add more photos: copy them into <b>assets/photos</b> and name them 03.jpg, 04.jpg, etc.
+      Then duplicate one “ph” block above and update the filename + caption.
+    </p>
+
+    <div class="ctaRow">
+      <a class="btn secondary" href="chapter2.html">← Back</a>
+      <a class="btn" href="index.html">Home</a>
+    </div>
+  </main>
+
+  <footer class="footer">© Us</footer>
+</body>
+</html>
