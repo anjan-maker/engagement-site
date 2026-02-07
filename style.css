@@ -384,4 +384,81 @@ hr.sep{
 .modalBackdrop.show{ display:block; }
 .modal{ max-width: 820px; margin: 90px auto; padding: 14px; }
 
+/* ===== Simple carousel ===== */
+.carousel{
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.66);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+}
+
+.carouselTrack{
+  display: flex;
+  transition: transform 450ms ease;
+  will-change: transform;
+}
+
+.slide{
+  min-width: 100%;
+  padding: 0;
+}
+
+.slide img{
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  display:block;
+  background: rgba(0,0,0,0.06);
+}
+
+.carouselNav{
+  position:absolute;
+  inset: 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 10px;
+  pointer-events:none;
+}
+
+.cBtn{
+  pointer-events:auto;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(0,0,0,0.35);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: transform .15s ease, background .15s ease;
+}
+.cBtn:hover{ transform: translateY(-1px); background: rgba(0,0,0,0.45); }
+
+.dots{
+  position:absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display:flex;
+  gap: 8px;
+  pointer-events:auto;
+}
+.dotBtn{
+  width: 9px; height: 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.25);
+  cursor:pointer;
+}
+.dotBtn.active{
+  background: rgba(255,105,180,0.9);
+  border-color: rgba(255,105,180,0.8);
+}
+
+
+
 
