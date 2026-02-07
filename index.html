@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>For Ramya ❤️</title>
+  <title>Happy 2nd Engagement Anniversary, Ramya ❤️</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,15 +13,16 @@
     <div id="bg-floaties"></div>
   </div>
 
-  <audio id="bgm" src="assets/music/love.mp3" preload="auto"></audio>
+  <audio id="bgm" src="assets/music/love.mp3" preload="auto" loop></audio>
 
   <header class="top">
     <div class="brand">
-      <span class="dot"></span>For Ramya ❤️
+      <span class="dot"></span>
+      Happy 2nd Engagement Anniversary, Ramya ❤️
       <a class="easter" href="#" id="openSecret" title="🤫">💗</a>
     </div>
 
-    <div style="display:flex; gap:10px; align-items:center;">
+    <div class="topRight">
       <button id="musicBtn" class="musicBtn" aria-pressed="false">
         <span class="musicDot"></span><span class="label">Music: Off</span>
       </button>
@@ -37,61 +38,70 @@
     </div>
   </header>
 
-  <div class="wrap">
+  <main class="wrap">
 
-    <!-- HOME (one screen) -->
-    <section class="card scene reveal show" data-scene="home">
+    <!-- HOME -->
+    <section class="card scene active" data-scene="home" data-chapter="home">
       <h1 data-typewriter>Happy 2nd Engagement Anniversary, Ramya ❤️</h1>
       <div class="spark"></div>
-      <p class="subtitle">A tiny website. A big love story.</p>
 
-      <div class="hero">
-        <img src="assets/photos/cover_01.jpg" alt="Cover photo" />
+      <p class="subtitle">
+        For this engagement, I want to take you through my love story in this small website.
+        Let’s revisit the story together.
+      </p>
+
+      <div class="carousel" data-autoplay="0" aria-label="Cover">
+        <div class="carouselTrack">
+          <div class="slide">
+            <div class="imgFrame">
+              <img src="assets/photos/cover_01.jpg" alt="Cover photo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="carouselNav">
+          <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+          <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+        </div>
+        <div class="dots"></div>
       </div>
 
-      <div class="ctaRow" style="justify-content:space-between;">
+      <div class="ctaRow navRow">
         <span></span>
         <button class="btn nextBtn" data-next="ch1-1">Start the story →</button>
       </div>
-
-      <p class="muted" style="margin-top:14px;">
-        Tip: Tap “Music: On” once — it remembers.
-      </p>
     </section>
 
     <!-- ===================== -->
-    <!-- CHAPTER 1 (3 scenes) -->
+    <!-- CHAPTER 1: Where It All Began -->
     <!-- ===================== -->
+
     <section class="card scene" data-scene="ch1-1" data-chapter="ch1">
-      <h1>The Beginning (Dec–Jan)</h1>
+      <h1>Where It All Began</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
         <div class="tTag">Dec 2023</div>
         <p>
-          Before meetings and memories, there was a conversation.
-          A simple chat… that slowly became something I looked forward to every day.
-          That’s how I first found you.
+          Dec 2023. A text message. A photo of a beautiful girl. Before meetings and memories, that simple moment became something I looked forward to every day. How lucky was I to find you before the world did?
         </p>
 
-       <div class="carousel" data-autoplay="2800">
-  <div class="carouselTrack">
-    <div class="slide">
-      <img src="assets/photos/c1_01.jpg" alt="c1_01">
-    </div>
-    <div class="slide">
-      <img src="assets/photos/c1_02.jpg" alt="c1_02">
-    </div>
-  </div>
+        <div class="carousel" data-autoplay="0" aria-label="Dec 2023 photos">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c1_01.jpg" alt="c1_01" /></div>
+            </div>
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c1_02.jpg" alt="c1_02" /></div>
+            </div>
+          </div>
 
-  <div class="carouselNav">
-    <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
-    <button class="cBtn" type="button" data-next aria-label="Next">›</button>
-  </div>
-
-  <div class="dots"></div>
-</div>
-
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
+        </div>
       </div>
 
       <div class="ctaRow navRow">
@@ -101,19 +111,27 @@
     </section>
 
     <section class="card scene" data-scene="ch1-2" data-chapter="ch1">
-      <h1>The Beginning (Dec–Jan)</h1>
+      <h1>Where It All Began</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
         <div class="tTag">Jan 6, 2024</div>
         <p>
-          The first time I saw you in real life.
-          Everything I felt became real in a second.
-          I still remember that moment clearly.
+          Jan 6, 2024. Breaking traditions, a girl came to meet me for a match. The first time I saw you, everything felt different. I knew you were the one. I was a little worried about the height though 🙂 and I will always be thankful to that cat.
         </p>
 
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c1_03.jpg" alt="c1_03"><div class="cap">Jan 6, 2024 <small>The first time I saw you.</small></div></div>
+        <div class="carousel" data-autoplay="0" aria-label="Jan 6 photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c1_03.jpg" alt="c1_03" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -124,18 +142,27 @@
     </section>
 
     <section class="card scene" data-scene="ch1-3" data-chapter="ch1">
-      <h1>The Beginning (Dec–Jan)</h1>
+      <h1>Where It All Began</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Jan 2024</div>
+        <div class="tTag">Jan 13, 2024</div>
         <p>
-          Then I met you at your home — all smiles, warmth, and comfort.
-          It felt natural. It felt right.
+          Jan 13, 2024. This time, it was my turn to come to you. You were even more beautiful than the last time, dressed in that saree. All smiles, warmth, and comfort. It felt natural, and it felt right.
         </p>
 
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c1_04.jpg" alt="c1_04"><div class="cap">At your home <small>All smiles. All warmth.</small></div></div>
+        <div class="carousel" data-autoplay="0" aria-label="Jan 13 photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c1_04.jpg" alt="c1_04" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -146,21 +173,31 @@
     </section>
 
     <!-- ===================== -->
-    <!-- CHAPTER 2 (3 scenes) -->
+    <!-- CHAPTER 2: The First Gifts -->
     <!-- ===================== -->
+
     <section class="card scene" data-scene="ch2-1" data-chapter="ch2">
-      <h1>The First Gifts (Feb 8–10)</h1>
+      <h1>The First Gifts</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Feb 8, 2024 — Goa</div>
+        <div class="tTag">Feb 8, 2024</div>
         <p>
-          I was alone in a hotel in Goa. I had been single all my life…
-          not really expecting what came next.
+          Feb 8, 2024. Valentine’s week, and I had been single all my life. But I wasn’t sad. I knew you would be with me for all the Valentines to come. I was alone in a hotel in Goa, not really expecting what came next.
         </p>
 
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c2_01.jpg" alt="c2_01"><div class="cap">Goa <small>Me… before “us”.</small></div></div>
+        <div class="carousel" data-autoplay="0" aria-label="Goa photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c2_01.jpg" alt="c2_01" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -171,19 +208,31 @@
     </section>
 
     <section class="card scene" data-scene="ch2-2" data-chapter="ch2">
-      <h1>The First Gifts (Feb 8–10)</h1>
+      <h1>The First Gifts</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
         <div class="tTag">The flowers</div>
         <p>
-          Then you sent me my first Valentine’s gift ever.
-          The effort you took… I’ll never forget it.
-          <br><b>“Hey A, here’s to the start of a blossoming relation.”</b> — Love, Ramya 🌹
+          Then came the flowers. My first Valentine’s gift ever. The effort you took to send them all the way to me meant more than you know.
+        </p>
+        <p class="quote">
+          “Hey A, here’s to the start of a blossoming relationship.”
+          <br><b>Love, R.</b>
         </p>
 
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c2_02.jpg" alt="c2_02"><div class="cap">The flowers <small>That message… forever.</small></div></div>
+        <div class="carousel" data-autoplay="0" aria-label="Flowers photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c2_02.jpg" alt="c2_02" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -194,19 +243,30 @@
     </section>
 
     <section class="card scene" data-scene="ch2-3" data-chapter="ch2">
-      <h1>The First Gifts (Feb 8–10)</h1>
+      <h1>The First Gifts</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Feb 10, 2024 — Mall + Sherwani</div>
+        <div class="tTag">Feb 10, 2024</div>
         <p>
-          We met at the mall. Nothing fancy. Just us.
-          And you helped me choose my best outfit till that day.
+          Feb 10, 2024. We met again. A simple meeting, yet it meant so much. Every moment with you felt easy and familiar.
         </p>
 
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c2_03.jpg" alt="c2_03"><div class="cap">Mall meet <small>Simple day. Big feeling.</small></div></div>
-          <div class="ph"><img src="assets/photos/c2_04.jpg" alt="c2_04"><div class="cap">Sherwani you chose <small>My best look till then.</small></div></div>
+        <div class="carousel" data-autoplay="0" aria-label="Feb 10 photos">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c2_03.jpg" alt="c2_03" /></div>
+            </div>
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c2_04.jpg" alt="c2_04" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -217,18 +277,34 @@
     </section>
 
     <!-- ===================== -->
-    <!-- CHAPTER 3 (5 scenes) -->
+    <!-- CHAPTER 3: Engagement Day -->
     <!-- ===================== -->
+
     <section class="card scene" data-scene="ch3-1" data-chapter="ch3">
-      <h1>Engagement Day — Feb 11, 2024 💍</h1>
+      <h1>Engagement Day</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">That first look</div>
-        <p>The way I saw you that day… beautiful, graceful, unforgettable.</p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c3_01.jpg" alt="c3_01"><div class="cap">How I saw you <small>Beautiful… and everything.</small></div></div>
-          <div class="ph"><img src="assets/photos/c3_02.jpg" alt="c3_02"><div class="cap">Mesmerized <small>I couldn’t stop looking at you.</small></div></div>
+        <div class="tTag">Feb 11, 2024</div>
+        <p>
+          Feb 11, 2024. I saw you, and in that moment, nothing else mattered. You looked beautiful in a way only you do.
+        </p>
+
+        <div class="carousel" data-autoplay="0" aria-label="Engagement first look">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_01.jpg" alt="c3_01" /></div>
+            </div>
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_02.jpg" alt="c3_02" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -239,17 +315,27 @@
     </section>
 
     <section class="card scene" data-scene="ch3-2" data-chapter="ch3">
-      <h1>Engagement Day — Feb 11, 2024 💍</h1>
+      <h1>Engagement Day</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">That ring 😅</div>
+        <div class="tTag">Still mesmerized</div>
         <p>
-          You were disappointed with the ring I got you to wear (photo included 😅) —
-          but we were still all smiles… because what mattered was us.
+          Even after the first glance, I kept finding myself looking at you again. Every time, you seemed more beautiful than before.
         </p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c3_03.jpg" alt="c3_03"><div class="cap">That ring 😅 <small>Still… all smiles.</small></div></div>
+
+        <div class="carousel" data-autoplay="0" aria-label="Mesmerized photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_02.jpg" alt="c3_02" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -260,14 +346,27 @@
     </section>
 
     <section class="card scene" data-scene="ch3-3" data-chapter="ch3">
-      <h1>Engagement Day — Feb 11, 2024 💍</h1>
+      <h1>Engagement Day</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Dance & laughter</div>
-        <p>We danced. You couldn’t stop laughing. That joy… I want it forever.</p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c3_04.jpg" alt="c3_04"><div class="cap">We danced <small>Your laughter = my favorite sound.</small></div></div>
+        <div class="tTag">The ring</div>
+        <p>
+          The ring wasn’t perfect, but the moment was.
+        </p>
+
+        <div class="carousel" data-autoplay="0" aria-label="Ring photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_03.jpg" alt="c3_03" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -278,15 +377,27 @@
     </section>
 
     <section class="card scene" data-scene="ch3-4" data-chapter="ch3">
-      <h1>Engagement Day — Feb 11, 2024 💍</h1>
+      <h1>Engagement Day</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Happy us</div>
-        <p>Pure joy. Pure us.</p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c3_06.jpg" alt="c3_06"><div class="cap">We were happy <small>Pure joy.</small></div></div>
-          <div class="ph"><img src="assets/photos/c3_07.jpg" alt="c3_07"><div class="cap">Close to you <small>That unspoken connection.</small></div></div>
+        <div class="tTag">Dance</div>
+        <p>
+          We danced together, and you couldn’t stop laughing. That laughter filled the room and stayed with me long after.
+        </p>
+
+        <div class="carousel" data-autoplay="0" aria-label="Dance photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_04.jpg" alt="c3_04" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -297,63 +408,136 @@
     </section>
 
     <section class="card scene" data-scene="ch3-5" data-chapter="ch3">
-      <h1>Engagement Day — Feb 11, 2024 💍</h1>
+      <h1>Engagement Day</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Our promise</div>
+        <div class="tTag">Close to you</div>
         <p>
-          We made a promise that day: we’ll be together, and we’ll keep choosing each other — always.
+          Being that close to you changed the way everything felt. There was a quiet intensity I won’t forget.
         </p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c3_05.jpg" alt="c3_05"><div class="cap">The end of the day <small>Same promise. Same love.</small></div></div>
+
+        <div class="carousel" data-autoplay="0" aria-label="Close photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_07.jpg" alt="c3_07" /></div>
+            </div>
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_06.jpg" alt="c3_06" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
       <div class="ctaRow navRow">
         <button class="btn secondary backBtn" data-back="ch3-4">← Back</button>
-        <button class="btn nextBtn" data-next="ch4-1">Next Chapter →</button>
+        <button class="btn nextBtn" data-next="ch3-6">Next →</button>
       </div>
     </section>
 
-    <!-- ===================== -->
-    <!-- CHAPTER 4 (2 scenes) -->
-    <!-- ===================== -->
-    <section class="card scene" data-scene="ch4-1" data-chapter="ch4">
-      <h1>One Year Later + Surprise Gifts (2025)</h1>
+    <section class="card scene" data-scene="ch3-6" data-chapter="ch3">
+      <h1>Engagement Day</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">She left for the U.S.</div>
+        <div class="tTag">Promise</div>
         <p>
-          You went to the U.S. for higher studies — for a better life and a better future for both of us.
+          As the day came to an end, we sat together, smiling. We made a promise to choose each other, no matter what lay ahead.
         </p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c4_01.jpg" alt="c4_01"><div class="cap">The day you left <small>For our future.</small></div></div>
-          <div class="ph"><img src="assets/photos/c4_02.jpg" alt="c4_02"><div class="cap">Me, thinking of you <small>Missing you… a lot.</small></div></div>
+
+        <div class="carousel" data-autoplay="0" aria-label="End photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c3_05.jpg" alt="c3_05" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
       <div class="ctaRow navRow">
         <button class="btn secondary backBtn" data-back="ch3-5">← Back</button>
+        <button class="btn nextBtn" data-next="ch4-1">Next Chapter →</button>
+      </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- CHAPTER 4: Engagement Day 2025 -->
+    <!-- ===================== -->
+
+    <section class="card scene" data-scene="ch4-1" data-chapter="ch4">
+      <h1>Engagement Day 2025</h1>
+      <div class="spark"></div>
+
+      <div class="storyBlock">
+        <div class="tTag">Feb 11, 2025</div>
+        <p>
+          Feb 11, 2025. Our engagement anniversary came again, but this time we were in different countries. You were in the U.S., and I was in India, learning what it means to hold on to love across distance.
+        </p>
+
+        <div class="carousel" data-autoplay="0" aria-label="Distance photos">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c4_01.jpg" alt="c4_01" /></div>
+            </div>
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c4_02.jpg" alt="c4_02" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
+        </div>
+      </div>
+
+      <div class="ctaRow navRow">
+        <button class="btn secondary backBtn" data-back="ch3-6">← Back</button>
         <button class="btn nextBtn" data-next="ch4-2">Next →</button>
       </div>
     </section>
 
     <section class="card scene" data-scene="ch4-2" data-chapter="ch4">
-      <h1>One Year Later + Surprise Gifts (2025)</h1>
+      <h1>Engagement Day 2025</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Your surprise gifts</div>
+        <div class="tTag">Your gifts</div>
         <p>
-          Then came your gifts: the platinum ring with a diamond, the “annoy you forever” promise,
-          and a bouquet full of chocolates. You kept your promise from thousands of miles away.
+          On that day, your gifts arrived. The ring you wanted me to wear, a bouquet full of chocolates, and a small promise wrapped in words. Even from miles away, you found a way to be close.
         </p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c4_03.jpg" alt="c4_03"><div class="cap">Your ring <small>Platinum + diamond.</small></div></div>
-          <div class="ph"><img src="assets/photos/c4_04.jpg" alt="c4_04"><div class="cap">Your promise <small>Annoy you forever.</small></div></div>
-          <div class="ph"><img src="assets/photos/c4_05.jpg" alt="c4_05"><div class="cap">Chocolates <small>Sweet, thoughtful… you.</small></div></div>
+
+        <div class="carousel" data-autoplay="0" aria-label="Gifts photos">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c4_03.jpg" alt="c4_03" /></div>
+            </div>
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c4_04.jpg" alt="c4_04" /></div>
+            </div>
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c4_05.jpg" alt="c4_05" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -364,21 +548,31 @@
     </section>
 
     <!-- ===================== -->
-    <!-- CHAPTER 5 (2 scenes) -->
+    <!-- CHAPTER 5: Fast Forward to Today -->
     <!-- ===================== -->
+
     <section class="card scene" data-scene="ch5-1" data-chapter="ch5">
-      <h1>Today + Love Letter ❤️</h1>
+      <h1>Fast Forward to Today</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
         <div class="tTag">Today</div>
         <p>
-          Here we are — both in the U.S., but in different states.
-          Trying to make our dream become reality.
+          Today, we are both in the U.S., still not together yet, but moving in the same direction.
         </p>
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c5_01.jpg" alt="c5_01"><div class="cap">Both in the U.S. <small>Still choosing each other.</small></div></div>
-          <div class="ph"><img src="assets/photos/c5_02.jpg" alt="c5_02"><div class="cap">Ramya <small>Cute. Bubbly. Full of life.</small></div></div>
+
+        <div class="carousel" data-autoplay="0" aria-label="Today photos 1">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c5_01.jpg" alt="c5_01" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
@@ -389,31 +583,68 @@
     </section>
 
     <section class="card scene" data-scene="ch5-2" data-chapter="ch5">
-      <h1>Today + Love Letter ❤️</h1>
+      <h1>Fast Forward to Today</h1>
       <div class="spark"></div>
 
       <div class="storyBlock">
-        <div class="tTag">Love letter</div>
-        <p style="font-size:1.05rem; line-height:1.75;">
-          Ramya, I know it’s not always easy. We’re struggling sometimes, but we’re still in love.
-          I’m thankful to you for being part of my life.  
-          <br><br>
-          <b>We will overcome everything. We will be together.</b>
-          <br><b>I love you. Always. ❤️</b>
+        <div class="tTag">Ramya</div>
+        <p>
+          And you are like this. Cute, bubbly, full of life. The kind of presence that makes everything around you feel lighter.
         </p>
 
-        <div class="grid">
-          <div class="ph"><img src="assets/photos/c5_03.jpg" alt="c5_03"><div class="cap">Our future <small>We’ll overcome all difficulties.</small></div></div>
+        <div class="carousel" data-autoplay="0" aria-label="Today photos 2">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c5_02.jpg" alt="c5_02" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
 
       <div class="ctaRow navRow">
         <button class="btn secondary backBtn" data-back="ch5-1">← Back</button>
+        <button class="btn nextBtn" data-next="ch5-3">Next →</button>
+      </div>
+    </section>
+
+    <section class="card scene" data-scene="ch5-3" data-chapter="ch5">
+      <h1>Fast Forward to Today</h1>
+      <div class="spark"></div>
+
+      <div class="storyBlock">
+        <div class="tTag">Forever</div>
+        <p class="closing">
+          Here’s to many more moments, and many more anniversaries.
+        </p>
+
+        <div class="carousel" data-autoplay="0" aria-label="Closing photo">
+          <div class="carouselTrack">
+            <div class="slide">
+              <div class="imgFrame"><img src="assets/photos/c5_03.jpg" alt="c5_03" /></div>
+            </div>
+          </div>
+
+          <div class="carouselNav">
+            <button class="cBtn" type="button" data-prev aria-label="Previous">‹</button>
+            <button class="cBtn" type="button" data-next aria-label="Next">›</button>
+          </div>
+          <div class="dots"></div>
+        </div>
+      </div>
+
+      <div class="ctaRow navRow">
+        <button class="btn secondary backBtn" data-back="ch5-2">← Back</button>
         <button class="btn nextBtn" data-next="home">Back to Home</button>
       </div>
     </section>
 
-  </div>
+  </main>
 
   <!-- Secret modal -->
   <div class="modalBackdrop" id="secretBackdrop" aria-hidden="true">
@@ -422,9 +653,9 @@
         <h1>🤫 Hi Ramya ❤️</h1>
         <div class="spark"></div>
         <div class="timeline">
-          <div class="tItem reveal show left"><span class="tTag">Secret #1</span><p style="margin:10px 0 0;">If you found this… you’re officially the cutest detective.</p></div>
-          <div class="tItem reveal show right"><span class="tTag">Secret #2</span><p style="margin:10px 0 0;">My favorite part of our story isn’t one day — it’s how we keep choosing each other.</p></div>
-          <div class="tItem reveal show left"><span class="tTag">Secret #3</span><p style="margin:10px 0 0;"><b>No matter how far — you’re my home.</b></p></div>
+          <div class="tItem reveal show left"><span class="tTag">Secret #1</span><p style="margin:10px 0 0;">If you found this, you’re officially the cutest detective.</p></div>
+          <div class="tItem reveal show right"><span class="tTag">Secret #2</span><p style="margin:10px 0 0;">My favorite part of our story isn’t one day. It’s how we keep choosing each other.</p></div>
+          <div class="tItem reveal show left"><span class="tTag">Secret #3</span><p style="margin:10px 0 0;"><b>No matter how far, you’re my home.</b></p></div>
         </div>
         <div class="ctaRow">
           <a class="btn" href="#" id="closeSecret">Close</a>
@@ -437,50 +668,52 @@
 
   <script src="script.js"></script>
 
-  <!-- Storybook navigation JS -->
+  <!-- Storybook navigation -->
   <script>
     const scenes = [...document.querySelectorAll('.scene')];
     const nav = document.getElementById('chapterNav');
 
-    function showScene(name){
-      scenes.forEach(s => s.classList.toggle('active', s.dataset.scene === name));
-      window.scrollTo({ top: 0, behavior: 'instant' });
-      // update nav active state
-      [...nav.querySelectorAll('a')].forEach(a => a.classList.remove('active'));
-      const activeLink = nav.querySelector(`a[data-goto="${name}"]`);
-      const chapter = document.querySelector(`.scene[data-scene="${name}"]`)?.dataset.chapter;
-      if (activeLink) activeLink.classList.add('active');
-      else if (chapter) nav.querySelector(`a[data-goto="${chapter}"]`)?.classList.add('active');
-      else nav.querySelector(`a[data-goto="home"]`)?.classList.add('active');
+    const firstSceneOfChapter = (chapter) => {
+      const s = document.querySelector(`.scene[data-chapter="${chapter}"]`);
+      return s ? s.dataset.scene : 'home';
+    };
 
-      // update hash (optional)
-      history.replaceState(null, "", `#${name}`);
+    function setActiveNav(sceneName){
+      [...nav.querySelectorAll('a')].forEach(a => a.classList.remove('active'));
+
+      const sceneEl = scenes.find(s => s.dataset.scene === sceneName);
+      const chapter = sceneEl?.dataset.chapter || 'home';
+
+      const link = nav.querySelector(`a[data-goto="${chapter}"]`) || nav.querySelector(`a[data-goto="home"]`);
+      if (link) link.classList.add('active');
     }
 
-    // nav click
+    function showScene(name){
+      scenes.forEach(s => s.classList.toggle('active', s.dataset.scene === name));
+      // scene transition handled by CSS
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      setActiveNav(name);
+      history.replaceState(null, "", `#${name}`);
+      // re-init carousels for visible scene (ensures dots active)
+      if (window.refreshCarousels) window.refreshCarousels();
+    }
+
     nav.addEventListener('click', (e) => {
       const a = e.target.closest('a[data-goto]');
       if(!a) return;
       e.preventDefault();
       const goto = a.dataset.goto;
-      // jump to first scene of chapter
-      if (goto.startsWith('ch')) {
-        const first = document.querySelector(`.scene[data-chapter="${goto}"]`)?.dataset.scene;
-        showScene(first || goto);
-      } else {
-        showScene('home');
-      }
+      showScene(goto === 'home' ? 'home' : firstSceneOfChapter(goto));
     });
 
-    // next/back buttons
     document.addEventListener('click', (e) => {
       const next = e.target.closest('.nextBtn');
       const back = e.target.closest('.backBtn');
-      if (next) showScene(next.dataset.next);
-      if (back) showScene(back.dataset.back);
+      if (next){ e.preventDefault(); showScene(next.dataset.next); }
+      if (back){ e.preventDefault(); showScene(back.dataset.back); }
     });
 
-    // secret modal open/close
+    // secret modal
     const openBtn = document.getElementById('openSecret');
     const backdrop = document.getElementById('secretBackdrop');
     const closeBtn = document.getElementById('closeSecret');
@@ -498,11 +731,10 @@
     closeBtn.addEventListener('click', closeModal);
     backdrop.addEventListener('click', (e) => { if (e.target === backdrop) closeModal(e); });
 
-    // initial scene from URL hash
-    const initial = (location.hash || "#home").replace("#","");
+    // initial scene from hash
+    const initial = (location.hash || "#home").slice(1);
     const exists = scenes.some(s => s.dataset.scene === initial);
     showScene(exists ? initial : 'home');
   </script>
 </body>
 </html>
-
