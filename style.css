@@ -362,3 +362,22 @@ hr.sep{
 @keyframes caret{
   50%{ border-right-color: transparent; }
 }
+
+/* Storybook: one scene at a time */
+.scene{ display:none; }
+.scene.active{ display:block; }
+
+/* tighter story block spacing */
+.storyBlock{ margin-top: 10px; }
+.navRow{ justify-content: space-between; }
+
+/* Modal support (used already earlier) */
+.modalBackdrop{
+  position:fixed; inset:0; display:none;
+  background: rgba(0,0,0,0.55);
+  z-index: 200;
+  pointer-events:auto;
+}
+.modalBackdrop.show{ display:block; }
+.modal{ max-width: 820px; margin: 90px auto; padding: 14px; }
+
