@@ -37,7 +37,25 @@
     </div>
   </header>
 
-  <main class="wrap">
+  <!-- PASSWORD GATE -->
+<div id="gate" class="gate">
+  <div class="gateCard">
+    <div class="gateTitle">🔒 Just for Ramya ❤️</div>
+    <div class="gateSub">Enter the password to reveal the surprise</div>
+
+    <input id="pw" class="gateInput" type="password" placeholder="Password" autocomplete="off" />
+    <div class="gateRow">
+      <button id="unlockBtn" class="gateBtn">Unlock</button>
+      <button id="hintBtn" class="gateBtn secondary" type="button">Hint</button>
+    </div>
+
+    <div id="hint" class="gateHint" style="display:none;">Hint:Place where we found the nemo </div>
+    <div id="gateMsg" class="gateMsg"></div>
+  </div>
+</div>
+
+
+  <main class="wrap" id="app" style="display:none;">
 
     <!-- HOME -->
     <section class="card scene active" data-scene="home" data-chapter="home">
@@ -736,4 +754,5 @@
   </script>
 </body>
 </html>
+
 
