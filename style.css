@@ -439,3 +439,73 @@ animation-iteration-count: infinite;
   font-weight:600;
 }
 
+/* ===== Password Gate UI ===== */
+.gate{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(10px);
+}
+.gateCard{
+  width: min(520px, 92vw);
+  border-radius: 22px;
+  padding: 18px 18px 16px;
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.20);
+}
+.gateTitle{
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+.gateSub{
+  color: #444;
+  font-weight: 650;
+  margin-bottom: 12px;
+}
+.gateInput{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.12);
+  outline: none;
+  font-size: 1rem;
+}
+.gateRow{
+  display:flex;
+  gap:10px;
+  margin-top: 12px;
+}
+.gateBtn{
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.10);
+  background: linear-gradient(135deg, rgba(255,105,180,0.95), rgba(138,43,226,0.85));
+  color: white;
+  font-weight: 750;
+  cursor: pointer;
+}
+.gateBtn.secondary{
+  background: rgba(0,0,0,0.06);
+  color: #111;
+}
+.gateHint{
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,105,180,0.10);
+  border: 1px solid rgba(255,105,180,0.16);
+  font-weight: 650;
+}
+.gateMsg{
+  margin-top: 10px;
+  color: #b00020;
+  font-weight: 750;
+}
+
